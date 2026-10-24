@@ -8,8 +8,19 @@ public class CalculatorTest {
 
     @Test
     public void testSum() {
+        //positive test
         int expected = 3;
         int actual = calculator.sum(1, 2);
+        assertEquals(expected, actual);
+
+        //negative test
+        expected = -3;
+        actual = calculator.sum(-1, -2);
+        assertEquals(expected, actual);
+
+        //zero test
+        expected = 4;
+        actual = calculator.sum(4, 0);
         assertEquals(expected, actual);
     }
 
