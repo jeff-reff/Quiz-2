@@ -27,7 +27,7 @@ public class DateCheckerTest {
     }
 
     @Test
-    public void testIsNullInput(DateChecker.Month month){
+    public void testIsNullInput(){
         Exception exception = assertThrows(IllegalArgumentException.class, () -> dateChecker.has31Days(null));
         String expectedMessage = "Month can NOT be null";
         String actualMessage = exception.getMessage();
