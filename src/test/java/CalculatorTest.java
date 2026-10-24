@@ -39,8 +39,19 @@ public class CalculatorTest {
 
     @Test
     public void testMultiply() {
+        //positive test
         int expected = 2;
         int actual = calculator.multiply(1, 2);
+        assertEquals(expected, actual);
+
+        //zero test
+        expected = 0;
+        actual = calculator.multiply(4, 0);
+        assertEquals(expected, actual);
+
+        //negative test
+        expected = -4;
+        actual = calculator.multiply(2, -2);
         assertEquals(expected, actual);
     }
 
