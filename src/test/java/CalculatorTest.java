@@ -26,8 +26,14 @@ public class CalculatorTest {
 
     @Test
     public void testSubtract() {
-        int expected = -1;
-        int actual = calculator.subtract(1, 2);
+        //negative case
+        int expected = 1;
+        int actual = calculator.subtract(-1, -2);
+        assertEquals(expected, actual);
+
+        //zero case
+        expected = 2;
+        actual = calculator.subtract(2, 0);
         assertEquals(expected, actual);
     }
 
