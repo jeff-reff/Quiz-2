@@ -24,7 +24,7 @@ public class DateChecker {
         if (Arrays.asList(monthThirtyOneDays).contains(month)){
             return true;
         } else {
-            return true;
+            return false;
         }
     }
 }
